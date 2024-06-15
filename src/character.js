@@ -86,13 +86,12 @@ function Character({ val }) {
       const currentValue =
         prevSkills[skillName.toLowerCase().replace(/\s+/g, "-")];
       if (currentValue < availableSkillsPoint) {
-        // Adjust 20 to your desired maximum limit
         return {
           ...prevSkills,
           [skillName.toLowerCase().replace(/\s+/g, "-")]: currentValue + 1,
         };
       } else {
-        return prevSkills; // If currentValue is already at maximum, return the current state
+        return prevSkills;
       }
     });
   };
