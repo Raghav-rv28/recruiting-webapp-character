@@ -36,6 +36,32 @@
   color: #61dafb;
 }
 
+.navbar {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+.Character {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+}
+.button-qualified {
+  background-color: green;
+  color: white;
+  padding: 0.25rem;
+}
+
+.button-normal {
+  text: black;
+  padding: 0.25rem;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
